@@ -1,0 +1,197 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #0d1117; /* Gelap */
+    color: #c9d1d9; /* Teks terang */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    position: relative;
+}
+
+header {
+    background: #161b22;
+    color: #58a6ff; /* Aksen biru neon */
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 2px solid #58a6ff;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: #58a6ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #f78166; /* Aksen oranye neon */
+}
+
+#hero {
+    background: linear-gradient(135deg, #0d1117, #161b22);
+    color: #58a6ff;
+    padding: 3rem;
+    text-align: center;
+    text-shadow: 0 0 10px #58a6ff;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+}
+
+.project {
+    background: #21262d;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.1);
+}
+
+.project h3 {
+    color: #58a6ff;
+}
+
+.project p {
+    font-size: 0.9rem;
+    color: #c9d1d9;
+    line-height: 1.4;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: #21262d;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+}
+
+form button {
+    background: #58a6ff;
+    color: #0d1117;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #f78166;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #161b22;
+    color: #58a6ff;
+    border-top: 2px solid #58a6ff;
+}
+
+.profile-pic {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    object-fit: cover;
+    border: 2px solid #58a6ff;
+    box-shadow: 0 0 15px #58a6ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.2); /* Membesarkan gambar */
+    box-shadow: 0 0 30px #58a6ff, 0 0 60px #58a6ff; /* Efek cahaya */
+}
+
+.falling-stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Agar tidak mengganggu interaksi */
+    background: radial-gradient(circle, #0d1117, #0a0e13);
+    z-index: -1;
+}
+
+.falling-stars::before, .falling-stars::after {
+    content: '';
+    position: absolute;
+    top: -200px;
+    width: 2px;
+    height: 2px;
+    background: white;
+    box-shadow: 
+        100px 200px #58a6ff, 200px 300px #ffffff, 300px 400px #58a6ff,
+        400px 500px #ffffff, 500px 600px #58a6ff, 600px 700px #ffffff,
+        700px 800px #58a6ff, 800px 900px #ffffff, 900px 1000px #58a6ff;
+    animation: falling 5s linear infinite;
+}
+
+.falling-stars::after {
+    animation-delay: 2.5s;
+}
+
+@keyframes falling {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+#music-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #58a6ff;
+    color: #0d1117;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 0 10px #58a6ff;
+    transition: background 0.3s ease;
+}
+
+#music-control:hover {
+    background: #f78166;
+}
+
+#instagram-link {
+    position: fixed;
+    bottom: 70px; /* Di atas tombol Play Music */
+    right: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+social-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #f78166;
+}
