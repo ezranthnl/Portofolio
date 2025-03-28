@@ -140,9 +140,20 @@ footer {
     height: 2px;
     background: white;
     box-shadow: 
-        100px 200px #58a6ff, 200px 300px #ffffff, 300px 400px #58a6ff,
-        400px 500px #ffffff, 500px 600px #58a6ff, 600px 700px #ffffff,
-        700px 800px #58a6ff, 800px 900px #ffffff, 900px 1000px #58a6ff;
+        50px 100px #58a6ff, 100px 200px #ffffff, 150px 300px #58a6ff,
+        200px 400px #ffffff, 250px 500px #58a6ff, 300px 600px #ffffff,
+        350px 700px #58a6ff, 400px 800px #ffffff, 450px 900px #58a6ff,
+        500px 1000px #ffffff, 550px 1100px #58a6ff, 600px 1200px #ffffff,
+        650px 1300px #58a6ff, 700px 1400px #ffffff, 750px 1500px #58a6ff,
+        800px 1600px #ffffff, 850px 1700px #58a6ff, 900px 1800px #ffffff,
+        950px 1900px #58a6ff, 1000px 2000px #ffffff,
+        -50px 100px #58a6ff, -100px 200px #ffffff, -150px 300px #58a6ff,
+        -200px 400px #ffffff, -250px 500px #58a6ff, -300px 600px #ffffff,
+        -350px 700px #58a6ff, -400px 800px #ffffff, -450px 900px #58a6ff,
+        -500px 1000px #ffffff, -550px 1100px #58a6ff, -600px 1200px #ffffff,
+        -650px 1300px #58a6ff, -700px 1400px #ffffff, -750px 1500px #58a6ff,
+        -800px 1600px #ffffff, -850px 1700px #58a6ff, -900px 1800px #ffffff,
+        -950px 1900px #58a6ff, -1000px 2000px #ffffff;
     animation: falling 5s linear infinite;
 }
 
@@ -191,7 +202,166 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-social-icon:hover {
+.social-icon:hover {
     transform: scale(1.2);
     box-shadow: 0 0 10px #f78166;
+}
+
+#skills {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: #21262d;
+    color: #58a6ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.1);
+}
+
+#timeline {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.timeline-item {
+    background: #21262d;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #30363d;
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.1);
+}
+
+.timeline-item h3 {
+    color: #58a6ff;
+    margin-bottom: 0.5rem;
+}
+
+#hobbies {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+}
+
+.hobbies-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hobbies-list li {
+    background: #21262d;
+    color: #58a6ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.1);
+}
+
+#gallery {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+}
+
+.scroll-hidden {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#minigame {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+    text-align: center;
+}
+
+#guess-input {
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    background: #21262d;
+    color: #c9d1d9;
+    width: 50%;
+}
+
+#guess-button {
+    padding: 0.5rem 1rem;
+    background: #58a6ff;
+    color: #0d1117;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#guess-button:hover {
+    background: #f78166;
+}
+
+#game-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #c9d1d9;
 }
