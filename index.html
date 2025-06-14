@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Ezra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="falling-stars"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Ezra Abiel Nathanael</p>
+        <p>Please Scroll Down!</p>
+    </section>
+    <section id="minigame">
+        <h2>Minigame: Guess the Number</h2>
+        <p>Try to guess the number I'm thinking of (between 1 and 100)!</p>
+        <input type="number" id="guess-input" placeholder="Enter your guess" min="1" max="100">
+        <button id="guess-button">Submit</button>
+        <p id="game-message"></p>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profil.jpg" alt="My Profile Picture" class="profile-pic">
+        <p>Hi, I'm Ezra Abiel Nathanael. I'm currently a student at STMIK LIKMI, living in Bandung.</p>
+        <p>I worked at a coffee shop, Kisah Manis, from 2021 to 2024, and I am currently interning at Nix Offset.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Taman Hutan Raya Bandung App</h3>
+            <p>A mobile application built using Flutter as a project for Taman Hutan Raya Bandung. The app provides information about the park, including maps, attractions, and events.</p>
+            <p><strong>Technologies:</strong> Flutter, Dart</p>
+            <p><em>This project was created as part of a school assignment and was not released publicly.</em></p>
+        </div>
+        <div class="project">
+            <h3>Pokedex Website</h3>
+            <p>A responsive website built using Bootstrap 5 that serves as a Pokedex. It displays information about various Pokémon, including their types, abilities, and stats.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, Bootstrap 5</p>
+            <p><em>This project was created for practice and is not hosted online.</em></p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Flutter</li>
+            <li>Bootstrap 5</li>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+    <section id="timeline">
+        <h2>My Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>2021 - 2024</h3>
+                <p>Worked at Kisah Manis Coffee Shop.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2024 - Present</h3>
+                <p>Interning at Nix Offset.</p>
+            </div>
+        </div>
+    </section>
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p>Here are some of the activities I enjoy in my free time:</p>
+        <ul class="hobbies-list">
+            <li>Photo/Videograph</li>
+            <li>Playing Music</li>
+            <li>Gaming</li>
+        </ul>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="galery1.jpg" alt="Gallery Image 1">
+            <img src="galery2.jpg" alt="Gallery Image 2">
+            <img src="galery3.jpg" alt="Gallery Image 3">
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, you can reach me via email or follow me on social media.</p>
+        <ul class="contact-list">
+            <li>Email: <a href="mailto:ezra.abiel25@gmail.com">ezra.abiel25@gmail.com</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/ezranthnl_/" target="_blank">@ezranthnl_</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+    <a href="https://www.instagram.com/ezranthnl_/" id="instagram-link" target="_blank">
+        <img src="instagramicon.png" alt="Instagram" class="social-icon">
+    </a>
+    <button id="music-control">Play Music</button>
+    <audio id="background-music" src="music.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
